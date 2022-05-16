@@ -1,14 +1,16 @@
 import java.util.Scanner
+import kotlin.math.pow
+
 
 fun main(){
-    var leitura = Scanner(System.`in`)
+    val leitura = Scanner(System.`in`)
 
     print("Digite o valor do diâmetro: ")
-    var dia = leitura.nextInt()
+    val dia = leitura.nextDouble()
 
-    var area = (3.14 * (dia*dia))/4
+    val area = (3.14 * dia.pow(2))/4
 
-    var per = 3.14*dia
+    val per = 3.14*dia
 
     println("A área do círculo é: $area m²")
     println("O perímetro do círculo é: $per ")
